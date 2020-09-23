@@ -10,7 +10,7 @@ import streamlit as st
 def get_data(selYear,graph_option):
 
     #Reading Data
-    data = pd.read_csv("./data/matches.csv")
+    data = pd.read_csv("./matches.csv")
 
     # Formatting date
     data['clean_date'] = pd.to_datetime(data['date'], dayfirst=False, yearfirst=False)
